@@ -57,7 +57,7 @@ app = Flask(__name__) #'__main__'
 
 @app.route('/') #www.mysite.com/api/
 def hello_method():
-    return "Hello, world!"
+    return "Hello, world. This is my GitHub Repository App.!"
 
 if __name__== '__main__':
     app.run(port=5000)
