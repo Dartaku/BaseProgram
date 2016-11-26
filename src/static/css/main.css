@@ -1,8 +1,29 @@
 /*Start with # is for ID */
 /*Start with . is for Class */
+/*Use Ctrl+Shift+R on Windows to clear Cache of the page to display Custom CSS*/
+
+/*  ----------------------------------------------------------------------------
+    Navigation Bar
+    ---------------------------------------------------------------------------- */
+.navbar-default {
+    background-color: #79BEDB;
+    background-image: none;
+}
+
+.navbar-default .navbar-brand {
+        color:#F0FFFF;
+    }
+
+.navbar-default .navbar-nav > li > a {
+        color:#F0FFFF;
+    }
+/*  ----------------------------------------------------------------------------
+    End of Navigation Bar
+    ---------------------------------------------------------------------------- */
+
 
 #login-form {
-    margin-top: 25px;
+    margin-top: 70px;
 }
 
 .page-form {
