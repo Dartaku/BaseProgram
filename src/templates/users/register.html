@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+        {% include 'navbar.html' %}
+<div class="container page-form">
+    <form name="register-form" id="register-form" action="{{ url_for('users.register_user') }}" method="post">
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="firstname" id="firstname" name="firstname" placeholder="John" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="lastname" id="lastname" name="lastname" placeholder="Doe" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@doe.com" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">New Password</label>
+            <input type="password" id="password" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="confirm_password">Enter your Password again</label>
+            <input type="password" id="confirm_password" name="confirm_password" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-success">Sign Up</button>
+    </form>
+
+    {% if error %}
+        <p class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+
+    <br><br><br>
+</div>
+{% endblock %}
