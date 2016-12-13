@@ -18,11 +18,11 @@ $(function() {
       },
       password: {
         required: true,
-        minlength: 5
+        minlength: 8
       },
       confirm_password: {
         required: true,
-        minlength: 5,
+        minlength: 8,
         equalTo: "#password"
       }
     },
@@ -32,11 +32,11 @@ $(function() {
       lastname: "Please enter your last name",
       password: {
         required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
+        minlength: "Your password must be at least 8 characters long"
       },
       confirm_password: {
         required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long",
+        minlength: "Your password must be at least 8 characters long",
         equalTo: "Please enter the same password as above"
       },
       email: "Please enter a valid email address"

@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <title>WonderWoods.Co</title>
     {% include 'html_dependencies.html' %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
 </head>
 <body>
+{% include 'newsbar.html' %}
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
 
-{% block content %}
+        {% include 'navbar.html' %}
+    </div>
+    <div class="col-md-1"></div>
+</div>
+    {% block content %}
+    {% endblock %}
+    {% include 'footer.html' %}
 
-{% endblock %}
+
 </body>
 </html>

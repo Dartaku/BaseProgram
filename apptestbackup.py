@@ -1,10 +1,10 @@
-from src.models.blog.post import Post
-from src.models.blog.blog import Blog
-from src.common.database import Database
-from src.models.blog.menu import Menu
 from flask import Flask, render_template, request, session, make_response
-from src.models.users.user2 import User
 from flask_mail import Mail, Message
+
+from src.common.database import Database
+from src.models.blog.blog import Blog
+from src.models.blog.post import Post
+from src.models.users.TBD.user2 import User
 
 __author__ = 'Dartaku'
 
@@ -35,7 +35,7 @@ app.register_blueprint(user_blueprint, url_prefix="/users")
 
 @app.route('/') #www.mysite.com/api/login
 def home_template():
-    return render_template("home.html")
+    return render_template("fullwidthheightpagehome.html")
 
 
 @app.route('/register') #www.mysite.com/api/register

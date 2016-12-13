@@ -1,0 +1,42 @@
+/*Start with # is for ID */
+/*Start with . is for Class */
+/*Use Ctrl+Shift+R on Windows to clear Cache of the page to display Custom CSS*/
+
+/*  ----------------------------------------------------------------------------
+    Navigation Bar
+    ---------------------------------------------------------------------------- */
+.navbar-default {
+    /*Uncomment for non-transaparent CSS
+    background-color: #E9967A;
+    background-image: none;
+    */
+    margin-bottom: 0;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.navbar-default .navbar-brand {
+        color:#000000;
+    }
+
+.navbar-default .navbar-nav > li > a {
+        color:#000000;
+    }
+
+/*.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #FFFF00;
+    color: #000000;
+} To set hovering css*/
+
+/*  ----------------------------------------------------------------------------
+    End of Navigation Bar
+    ---------------------------------------------------------------------------- */
+
+.navbar-inverse {
+    margin-bottom: 0;
+}

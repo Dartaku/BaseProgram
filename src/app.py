@@ -1,6 +1,6 @@
 from src.common.database import Database
 from flask import Flask, render_template
-from src.models.users.views import user_blueprint
+
 
 __author__ = 'Dartaku'
 
@@ -20,4 +20,11 @@ def home():
     return render_template('home.html')
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html")
+
+from src.models.users.views import user_blueprint
+from src.models.products.views import products_blueprint
 app.register_blueprint(user_blueprint, url_prefix="/users")
+app.register_blueprint(products_blueprint, url_prefix="/products")

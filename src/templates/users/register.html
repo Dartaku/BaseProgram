@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-        {% include 'navbar.html' %}
 <div class="container page-form">
     <form name="register-form" id="register-form" action="{{ url_for('users.register_user') }}" method="post">
         <div class="form-group">
@@ -17,11 +16,11 @@
         </div>
         <div class="form-group">
             <label for="password">New Password</label>
-            <input type="password" id="password" name="password" class="form-control">
+            <input type="password" id="password" name="password" placeholder="Password" class="form-control">
         </div>
         <div class="form-group">
             <label for="confirm_password">Enter your Password again</label>
-            <input type="password" id="confirm_password" name="confirm_password" class="form-control">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Password" class="form-control">
         </div>
 
         <button type="submit" class="btn btn-success">Sign Up</button>
@@ -31,6 +30,5 @@
         <p class=error><strong>Error:</strong> {{ error }}
     {% endif %}
 
-    <br><br><br>
 </div>
 {% endblock %}

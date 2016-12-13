@@ -53,4 +53,4 @@ def user_alerts():
 @user_blueprint.route('/logout')
 def logout_user():
     session['email'] = None
-    return render_template("home.html")
+    return redirect("/")
